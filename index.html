@@ -1,4 +1,45 @@
-jQHashChange
-============
-
-jQuery with hash change, http://plugins.arabirim.com.tr/jQHashChange/
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="tr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="keywords" content="yds"/>
+        <meta name="ROBOTS" content="FOLLOW, INDEX"/>
+        <title>jQHashChange</title>
+        <link rel="stylesheet" href="library/css/normalize.css"/>
+        <style type="text/css">
+            a{display: block; text-decoration: none;}
+            a:hover{color:#cd1821;}
+        </style>
+    </head>
+    <body>
+        <div style="text-align: center">
+            <h1>jQHashChange</h1>
+            <p>Choose one of the following elements (Porsche,Mercedes,Audi,Bmw...)</p>
+        </div>
+        <div style="width: 30%; margin: 0px auto;">
+            <div style=" float: left;  padding: 20px;">
+                <a href="#Porsche">     Hash :  Porsche</a>
+                <a href="#Mercedes">    Hash :  Mercedes</a>
+                <a href="#Audi">        Hash :  Audi</a>
+                <a href="#Bmw">         Hash :  Bmw</a>
+                <a href="#Volvo">       Hash :  Volvo</a>
+                <a href="#Volkswagen">  Hash :  Volkswagen</a>
+                <a href="#Anadol">      Hash :  Anadol</a>
+                <a href="#Opel">        Hash :  Opel</a>
+            </div>
+            <div class="newHashContent" style="float: left;  padding: 20px;"></div><!-- newHashContent end -->
+        </div>
+        <script type="text/javascript" src="library/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="library/js/jQHashChange.js"></script>
+        <script type="text/javascript">
+            
+            jQHashChange();
+            
+            function bodyAppend( newHash )
+            {
+                jQuery( '.newHashContent' ).append( '<div>New hash : ' + newHash + '</div>' );
+            }
+            
+        </script>
+    </body>
+</html>
