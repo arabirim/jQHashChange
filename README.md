@@ -8,6 +8,6 @@ jQuery with hash change, http://plugins.arabirim.com.tr/jQHashChange/
 
 <pre>
 jQHashChange( function (newHash){
-                jQuery( '.newHashContent' ).append( '<div>New hash : ' + newHash + '</div>' );
+    jQuery( '.newHashContent' ).append( '<div>New hash : ' + newHash + '</div>' );
 });
 </pre>
