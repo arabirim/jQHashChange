@@ -1,4 +1,4 @@
-    previousHash = '';
+previousHash = '';
 
 function jQHashChange()
 {
