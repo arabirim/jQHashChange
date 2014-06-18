@@ -1,4 +1,4 @@
-window.previousHash = '';
+    previousHash = '';
 
 function jQHashChange()
 {
