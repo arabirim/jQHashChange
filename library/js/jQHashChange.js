@@ -19,9 +19,6 @@ function jQHashChange( callback )
                 
                 if( callback )
                     callback(newHash);
-                    //window[callback](newHash);
-                    //jQuery.parseJSON(callback)
-                   // new Function (callback)();
                 
                 jQHashChange( callback );
             } 
