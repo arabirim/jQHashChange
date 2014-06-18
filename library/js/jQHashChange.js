@@ -1,11 +1,12 @@
 previousHash = '';
 
-function jQHashChange()
+function jQHashChange( callback )
 {
+    
     var newHash = '';
     var url = window.location.href.split('#')[1];
 
-    var zaman = setInterval
+    zaman = setInterval
     (
         function ()
         {
@@ -15,8 +16,14 @@ function jQHashChange()
             {
                 clearInterval(zaman);
                 previousHash = newHash;
-                bodyAppend( newHash );
-                jQHashChange();
+                
+                if( callback )
+                    callback(newHash);
+                    //window[callback](newHash);
+                    //jQuery.parseJSON(callback)
+                   // new Function (callback)();
+                
+                jQHashChange( callback );
             } 
         },100
     );
